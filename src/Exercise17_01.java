@@ -10,24 +10,21 @@ import java.io.*;
  * - Integers should be separated by a space
  * - Use text I/O (PrintWriter)
  *
- * @author Your Name
+ * @author Gabriel Cardenas
  */
 public class Exercise17_01 {
 
     public static void main(String[] args) throws IOException {
-        // TODO: Create a File object for "Exercise17_01.txt"
+        File file = new File("Exercise17_01.txt");
+        PrintWriter output = new PrintWriter(new FileWriter(file, true));
 
-
-        // TODO: Create PrintWriter in APPEND mode
-        // Hint: Use FileWriter with append parameter set to true
-
-
-        // TODO: Generate and write 100 random integers
-        // Hint: Use Math.random() to generate random integers
-        // Hint: Separate integers with a space
-
+        for (int i = 0; i < 100; i++) {
+            int myNum = (int)(Math.random() * 101);
+            output.print(myNum + " ");
+        }
 
         // TODO: Close the file (or use try-with-resources)
+        output.close();
 
 
         System.out.println("100 random integers written to Exercise17_01.txt");
