@@ -23,9 +23,7 @@ public class Exercise17_01 {
             output.print(myNum + " ");
         }
 
-        // TODO: Close the file (or use try-with-resources)
         output.close();
-
 
         System.out.println("100 random integers written to Exercise17_01.txt");
     }
