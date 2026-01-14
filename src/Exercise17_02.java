@@ -15,7 +15,7 @@ import java.util.Date;
  * - In the same program, read the data back
  * - Display all values to verify they were stored correctly
  * 
- * @author Your Name
+ * @author Gabriel Cardenas
  */
 public class Exercise17_02 {
     
